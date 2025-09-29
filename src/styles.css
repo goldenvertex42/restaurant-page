@@ -1,0 +1,235 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* END OF RESET */
+
+@font-face {
+    font-family: Akronim;
+    src: url(assets/fonts/heading/Akronim-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(assets/fonts/body/Lato-Regular.ttf)
+}
+
+body {
+    font-family: Lato;
+    color: #FFFFFF;
+    background-image: url(assets/6293797.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tabs {
+    padding: 0.75vw 1.5vw;
+    background-color: transparent;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 
+        0 0 5px #fff, /* Soft white glow */
+        0 0 10px #fff, /* Brighter white glow */
+        0 0 20px #0073e6, /* Blue accent glow */
+        0 0 40px #0073e6; /* Deeper blue glow */
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.tabs:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tabs:active {
+    background-color: #ccc; 
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.heading-container {
+    margin: 1vw;
+}
+
+.heading {
+    font-family: Akronim;
+    font-size: 5rem;
+    background: linear-gradient(to bottom, #ffc11f, #fe650d, #f33c04, #da1f05, #a10100);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    color: transparent; /* Fallback for other browsers */
+    display: inline-block;
+}
+
+.review,
+.day,
+.location,
+.bev,
+.plate-description,
+.contact-info {
+    text-shadow: 
+        0 0 5px #fff, /* Soft white glow */
+        0 0 10px #fff, /* Brighter white glow */
+        0 0 20px #0073e6, /* Blue accent glow */
+        0 0 40px #0073e6; /* Deeper blue glow */
+}
+
+.review-container,
+.main-plates-container,
+.beverages-container,
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60ch;
+    background-color: rgba(20, 20, 44, 0.4);
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.review,
+.plate-description,
+.bev,
+.contact-info {
+    font-size: 1.75rem;
+}
+
+.customer,
+.plate-title,
+.hours,
+.beverages-heading,
+.main-plates-heading,
+.contact-name {
+    font-size: 2rem;
+}
+
+.hours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 20, 44, 0.4);
+    padding: 1vw;
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+
+.day {
+    font-size: 1.2rem;
+}
+
+.location-container {
+    background-color: rgba(20, 20, 44, 0.4);
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.beverages-heading,
+.main-plates-heading,
+.customer,
+.hours, 
+.contact-name {
+    color: #fff;
+    text-shadow: 
+        0 0 7px #ff5c00, /* Inner glow, brighter neon orange */
+        0 0 10px #ff5c00,
+        0 0 21px #ff5c00,
+        0 0 42px #ff6700, /* Outer glow, slightly different shade or intensity */
+        0 0 82px #ff6700,
+        0 0 92px #ff6700,
+        0 0 102px #ff6700;
+}
+
+.main-plates-container,
+.beverages-container {
+    gap: 0.8rem;
+}
+
+.plate-title {
+    text-shadow:
+        0 0 5px #fff, /* Inner white glow */
+        0 0 10px #fff,
+        0 0 15px #0073e6, /* First layer of blue glow */
+        0 0 20px #0073e6,
+        0 0 25px #0073e6,
+        0 0 30px #0073e6,
+        0 0 35px #0073e6;
+}
+
+.plate-container,
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.plate-description {
+    text-align: center;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    margin: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
